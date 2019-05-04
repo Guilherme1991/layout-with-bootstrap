@@ -1,0 +1,98 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+body{
+font-family: 'Roboto', sans-serif;   
+}
+#navbar{
+}
+#navbar nav{
+width: 100%;
+background: #f1f1f1;
+display: flex;
+}
+.logo{
+display: flex;
+align-items: center;
+padding: 10px;
+flex: 1;
+}
+.logo img{
+width: 70px;
+}
+#navbar nav ul{
+display: flex;
+align-items: center;
+}
+#navbar nav ul li{
+  display: inline-block;  
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+#navbar nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+}
+.navbar ul{
+    flex: 2;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.fab{
+    margin-right: 25px;
+    font-size: 22px;
+}
+.fab:hover{
+    color: white;
+}
+header{
+    background: #f1f1f1;
+}
+section{
+ padding: 15px;
+}
+footer{
+ background: black;
+}
+.container{
+    display: flex;
+}
+.container p{
+color: white;
+margin: 15px;
+}
+@media only screen and (max-width: 810px){
+    #navbar nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+    }
+    #navbar nav ul{
+        display: none;
+        flex-direction: column;
+        background: #f1f1f1;
+        width: 100%;
+    }
+    #navbar nav ul li{
+        color: black;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .fab{
+        margin-right: 0;
+        margin: 10px;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
